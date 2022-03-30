@@ -6,7 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="libraries\" />
+    <Compile Remove="libraries\**" />
+    <EmbeddedResource Remove="libraries\**" />
+    <None Remove="libraries\**" />
   </ItemGroup>
 
 </Project>

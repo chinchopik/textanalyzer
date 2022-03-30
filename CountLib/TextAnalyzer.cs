@@ -25,7 +25,7 @@ namespace CountLib
         {
             if (text != null)
             {
-                MessageBox.Show($"Количество гласных: {vowels}\nКоличество согласных: {consonants}\nКоличество цифр: {numbers}\nКоличество пункуационных знаков: {punctuation}\nКоличество символов: {symbols}", "Всплывающее окно");
+                MessageBox.Show($"Количество гласных букв: {vowels}\nКоличество согласных букв: {consonants}\nКоличество цифр: {numbers}\nКоличество пунктуационных знаков: {punctuation}\nКоличество символов: {symbols}", "Всплывающее окно");
             }
         }
     }

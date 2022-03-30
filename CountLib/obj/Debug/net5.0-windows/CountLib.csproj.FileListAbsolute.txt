@@ -9,4 +9,3 @@ C:\Users\Администратор\source\repos\task\CountLib\obj\Debug\net5.0-
 C:\Users\Администратор\source\repos\task\CountLib\obj\Debug\net5.0-windows\CountLib.dll
 C:\Users\Администратор\source\repos\task\CountLib\obj\Debug\net5.0-windows\ref\CountLib.dll
 C:\Users\Администратор\source\repos\task\CountLib\obj\Debug\net5.0-windows\CountLib.pdb
-C:\Users\Администратор\source\repos\task\CountLib\obj\Debug\net5.0-windows\CountLib.csproj.AssemblyReference.cache
