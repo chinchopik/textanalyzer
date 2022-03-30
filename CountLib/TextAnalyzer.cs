@@ -11,6 +11,10 @@ namespace CountLib
         public int numbers;
         public int punctuation;
         public int symbols;
+        /// <summary>
+        /// Метод считает количество символов
+        /// </summary>
+        /// <param name="text"></param>
         public void GetText(string text)
         {
             vowels = Regex.Matches(text, @"[аеоуиэюыёя]", RegexOptions.IgnoreCase).Count;
@@ -21,11 +25,17 @@ namespace CountLib
         }
 
 
+        /// <summary>
+        /// Метод выводит сообщение на экран о количестве символов
+        /// </summary>
+        /// <param name="text"></param>
         public void Print(string text)
         {
             if (text != null)
             {
-                MessageBox.Show($"Количество гласных букв: {vowels}\nКоличество согласных букв: {consonants}\nКоличество цифр: {numbers}\nКоличество пунктуационных знаков: {punctuation}\nКоличество символов: {symbols}", "Всплывающее окно");
+                MessageBox.Show($"Количество гласных букв: {vowels}\nКоличество согласных букв: {consonants}\n" +
+                    $"Количество цифр: {numbers}\nКоличество пунктуационных знаков: {punctuation}\n" +
+                    $"Количество символов: {symbols}", "Всплывающее окно");
             }
         }
     }
