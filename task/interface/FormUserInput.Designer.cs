@@ -31,8 +31,8 @@ namespace task
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormUserInput));
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.Analyze = new System.Windows.Forms.Button();
-            this.Back = new System.Windows.Forms.Button();
+            this.ButtonAnalyze = new System.Windows.Forms.Button();
+            this.ButtonBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // richTextBox1
@@ -44,33 +44,33 @@ namespace task
             this.richTextBox1.Text = "";
             this.richTextBox1.TextChanged += new System.EventHandler(this.RichTextBox1_TextChanged);
             // 
-            // Analyze
+            // ButtonAnalyze
             // 
-            this.Analyze.Location = new System.Drawing.Point(56, 231);
-            this.Analyze.Name = "Analyze";
-            this.Analyze.Size = new System.Drawing.Size(238, 23);
-            this.Analyze.TabIndex = 2;
-            this.Analyze.Text = "Провести анализ";
-            this.Analyze.UseVisualStyleBackColor = true;
-            this.Analyze.Click += new System.EventHandler(this.ButtonAnalyze);
+            this.ButtonAnalyze.Location = new System.Drawing.Point(56, 231);
+            this.ButtonAnalyze.Name = "ButtonAnalyze";
+            this.ButtonAnalyze.Size = new System.Drawing.Size(238, 23);
+            this.ButtonAnalyze.TabIndex = 2;
+            this.ButtonAnalyze.Text = "Провести анализ";
+            this.ButtonAnalyze.UseVisualStyleBackColor = true;
+            this.ButtonAnalyze.Click += new System.EventHandler(this.ButtonAnalyze_Click);
             // 
-            // Back
+            // ButtonBack
             // 
-            this.Back.Location = new System.Drawing.Point(300, 231);
-            this.Back.Name = "Back";
-            this.Back.Size = new System.Drawing.Size(75, 23);
-            this.Back.TabIndex = 3;
-            this.Back.Text = "Назад";
-            this.Back.UseVisualStyleBackColor = true;
-            this.Back.Click += new System.EventHandler(this.ButtonBack);
+            this.ButtonBack.Location = new System.Drawing.Point(300, 231);
+            this.ButtonBack.Name = "ButtonBack";
+            this.ButtonBack.Size = new System.Drawing.Size(75, 23);
+            this.ButtonBack.TabIndex = 3;
+            this.ButtonBack.Text = "Назад";
+            this.ButtonBack.UseVisualStyleBackColor = true;
+            this.ButtonBack.Click += new System.EventHandler(this.ButtonBack_Click);
             // 
             // FormUserInput
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(434, 281);
-            this.Controls.Add(this.Back);
-            this.Controls.Add(this.Analyze);
+            this.Controls.Add(this.ButtonBack);
+            this.Controls.Add(this.ButtonAnalyze);
             this.Controls.Add(this.richTextBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(450, 320);
@@ -86,7 +86,7 @@ namespace task
 
         #endregion
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button Analyze;
-        private System.Windows.Forms.Button Back;
+        private System.Windows.Forms.Button ButtonAnalyze;
+        private System.Windows.Forms.Button ButtonBack;
     }
 }
